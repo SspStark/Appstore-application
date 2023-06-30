@@ -1,21 +1,38 @@
 .app-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: white;
-  margin-right: 10px;
+  padding-top: 14px;
+  margin-right: 5px;
+  margin-left: 5px;
   margin-bottom: 10px;
-  border-radius: 10px;
-  width: 130px;
-  padding: 15px;
+  border-radius: 12px;
+  width: 42%;
+  max-width: 120px;
 }
 .app-image {
   width: 60px;
+  height: 60px;
 }
 .app-name {
   color: #1e293b;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .app-item {
+    max-width: 175px;
+    padding-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .app-image {
+    width: 85px;
+    height: 85px;
+  }
+  .app-name {
+    font-size: 22px;
+  }
 }

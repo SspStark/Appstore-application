@@ -2,7 +2,7 @@ import './index.css'
 
 const AppItem = props => {
   const {appDetails} = props
-  const {appName, imageUrl, category} = appDetails
+  const {appName, imageUrl} = appDetails
 
   return (
     <li className="app-item">
